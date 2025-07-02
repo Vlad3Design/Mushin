@@ -15,6 +15,8 @@ This theme works best with the plugins **[MindfulDo](https://github.com/Vlad3Des
 
 Both plugins are created by the same developer and follow the same zen philosophy as the Mushin theme.
 
+Also, the CSS Styles made by **[efemkay](https://github.com/efemkay): [obsidian-modular-css-layout](https://github.com/efemkay/obsidian-modular-css-layout)** help improve the design, especially enabling in the MCL Wide Views: **Enable Adjustable RLL** and setting the **Max Width for Normal Width page to 1500px**
+
 ## 🎋 Philosophy
 
 Inspired by the ancient zen teaching of mushin, this theme eliminates visual distractions and creates a harmonious environment where thoughts can flow like water. Every design decision serves the purpose of achieving mental clarity and deep focus.
