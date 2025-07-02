@@ -144,7 +144,7 @@ body {
 /* WORKSPACE LAYOUT - FLOWING SPACES */
 /* ========================= */
 
-/* Main Tab Header - Centered Elegance */
+/* Main Tab Header - Centered Elegance (multiple selectors) */
 .workspace-tabs,
 .workspace-leaf-content .workspace-tab-header,
 .mod-horizontal .workspace-tab-header,
@@ -172,11 +172,16 @@ div[data-type] .workspace-tab-header {
   width: 100%;
 }
 
-/* Universal tab centering */
-.workspace-tab-header-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+/* Universal tab centering - last resort */
+.workspace-tab-header:not(.workspace-sidebar .workspace-tab-header) {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.workspace-tab-header-container:not(.workspace-sidebar .workspace-tab-header-container) {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
 }
 
 /* Main Workspace */
@@ -208,6 +213,19 @@ div[data-type] .workspace-tab-header {
 /* ========================= */
 /* SIDEBAR - ZEN NAVIGATION */
 /* ========================= */
+
+/* Sidebar Container */
+.workspace-sidebar {
+  background-color: var(--background-primary-alt);
+  border-right: 1px solid var(--background-modifier-border);
+  box-shadow: 2px 0 8px var(--mushin-shadow);
+}
+
+.workspace-sidebar.mod-right {
+  border-left: 1px solid var(--background-modifier-border);
+  border-right: none;
+  box-shadow: -2px 0 8px var(--mushin-shadow);
+}
 
 /* Sidebar Tabs - Mushin Zen Style */
 .workspace-tab-header {
@@ -274,6 +292,28 @@ div[data-type] .workspace-tab-header {
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: var(--font-text), 'Noto Sans JP', sans-serif;
+}
+
+/* Remove previous centering overrides */
+.workspace-tab-header-tab, 
+.workspace-tab-header-tab *,
+.workspace-tab-header-inner-title,
+.workspace-leaf .workspace-tab-header-inner-title,
+.workspace-leaf-content .workspace-tab-header-tab,
+[data-type] .workspace-tab-header-tab,
+[data-type] .workspace-tab-header-tab *,
+div.workspace-tab-header-tab,
+.workspace-tab-header-tab-title,
+.workspace-tab-header-tab span,
+.workspace-tab-header-tab div {
+  text-align: unset !important;
+  text-align-last: unset !important;
+}
+
+/* Remove default Obsidian tab box-shadow */
+.workspace-split.mod-root .workspace-tab-header.is-active::before, 
+.workspace-split.mod-root .workspace-tab-header.is-active::after {
+  box-shadow: none !important;
 }
 
 /* ========================= */
@@ -352,7 +392,7 @@ div[data-type] .workspace-tab-header {
 
 /* Selection */
 .cm-selectionBackground {
-  background-color: rgba(107, 125, 107, 0.15);
+  background-color: rgba(107, 125, 107, 0.15) !important;
 }
 
 /* ========================= */
@@ -380,7 +420,7 @@ div[data-type] .workspace-tab-header {
 /* Headings */
 .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6,
 .markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
-  color: var(--mushin-green);
+  color: var(--mushin-green) !important;
 }
 
 /* Links */
@@ -592,25 +632,25 @@ div[data-type] .workspace-tab-header {
 
 /* Always visible status bar, no hover effects */
 .status-bar {
-  opacity: 1;
-  pointer-events: all;
-  transform: none;
-  transition: none;
+  opacity: 1 !important;
+  pointer-events: all !important;
+  transform: none !important;
+  transition: none !important;
 }
 
-/* Hide status bar if option is enabled in settings */
+/* Hide status bar if option is enabled in settings (add .mushin-hide-status-bar on body) */
 body.mushin-hide-status-bar .status-bar {
-  display: none;
+  display: none !important;
 }
 
 /* Remove any trigger element if present */
 .status-bar-trigger {
-  display: none;
+  display: none !important;
 }
 
 /* Hide the status bar if the option is enabled in Style Settings */
 .hide-status-bar .status-bar {
-  display: none;
+  display: none !important;
 }
 
 /* ========================= */
@@ -883,8 +923,8 @@ body {
 
 /* Header marker styling */
 .cm-header .cm-header-marker {
-  color: var(--mushin-green);
-  opacity: 1;
+  color: var(--mushin-green) !important;
+  opacity: 1 !important;
 }
 
 /* End of Mushin Theme - May your mind be clear and your thoughts flow like water */ 
