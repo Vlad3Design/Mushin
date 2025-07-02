@@ -6,6 +6,15 @@
 
 **Mushin** (無心) is an Obsidian theme that embodies the Japanese zen concept of "no-mind" - a state of mental clarity, effortless flow, and pure focus. This theme transforms your note-taking experience into a journey of mental tranquility and enhanced productivity.
 
+## 🔌 Recommended Plugins
+
+This theme works best with the plugins **[MindfulDo](https://github.com/Vlad3Design/MindfulDo)** & **[FadeLine](https://github.com/Vlad3Design/FadeLine)**.
+
+- **[MindfulDo](https://github.com/Vlad3Design/MindfulDo)** - A calm, beautiful and simple todo list for Obsidian that helps you stay organized without stress
+- **[FadeLine](https://github.com/Vlad3Design/FadeLine)** - Clarity in the chaos. FadeLine dims the noise so your thoughts can speak
+
+Both plugins are created by the same developer and follow the same zen philosophy as the Mushin theme.
+
 ## 🎋 Philosophy
 
 Inspired by the ancient zen teaching of mushin, this theme eliminates visual distractions and creates a harmonious environment where thoughts can flow like water. Every design decision serves the purpose of achieving mental clarity and deep focus.
