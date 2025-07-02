@@ -37,8 +37,8 @@ Inspired by the ancient zen teaching of mushin, this theme eliminates visual dis
 - Subtle texture effects that mimic natural paper
 
 ### 🎨 **Dual Themes**
-- **Light Mode**: Inspired by morning meditation in a zen garden
-- **Dark Mode**: Designed for evening contemplation under starlight
+- **Light Mode**
+- **Dark Mode**
 - Seamless transitions between modes
 - Both optimized for extended reading and writing sessions
 
