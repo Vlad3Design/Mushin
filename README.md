@@ -1,3 +1,5 @@
+![MindfulDo v1.2.0](Mushin.jpg)
+
 # 無心 Mushin - A Zen-Inspired Obsidian Theme
 
 > *"The mind of no-mind, the flowing state of pure awareness"*
