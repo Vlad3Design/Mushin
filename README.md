@@ -176,6 +176,6 @@ May this theme serve as a companion in your journey toward clarity, understandin
 
 ---
 
-**[Download Mushin Theme](https://github.com/Vlad3Design)** | **[Report Issues](https://github.com/Vlad3Design/mushin-obsidian-theme/issues)** | **[Creator's Portfolio](https://vlad3d.art)**
+**[Download Mushin Theme](https://github.com/Vlad3Design)** | **[Report Issues](https://github.com/Vlad3Design/mushin-obsidian-theme/issues)** 
 
 *Theme Version: 1.0.0 | Compatible with Obsidian 0.16.0+ | Created by Vlad 3Design* 
