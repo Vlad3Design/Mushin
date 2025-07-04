@@ -1,4 +1,4 @@
-![MindfulDo v1.2.0](Mushin.jpg)
+![Mushin](Mushin.jpg)
 
 # 無心 Mushin - A Zen-Inspired Obsidian Theme
 
