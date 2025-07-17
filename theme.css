@@ -492,8 +492,32 @@ div.workspace-tab-header-tab,
   line-height: 1.6;
 }
 
-/* Blockquotes - Airy Zen Redesign */
-.cm-quote, .markdown-preview-view blockquote {
+/* Blockquotes - Ultra Simple Edit Mode */
+.cm-quote {
+  background: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-style: normal;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+  position: static;
+  box-shadow: none;
+}
+
+.cm-quote::before,
+.cm-quote::after {
+  display: none !important;
+}
+
+.cm-quote:hover {
+  transform: none;
+  transition: none;
+}
+
+/* Blockquotes - Zen Effects Only in Reading Mode */
+.markdown-preview-view blockquote {
   border: none;
   background: transparent;
   margin: var(--size-4-8) var(--size-4-6);
@@ -506,7 +530,7 @@ div.workspace-tab-header-tab,
   text-align: center;
 }
 
-.cm-quote::before, .markdown-preview-view blockquote::before {
+.markdown-preview-view blockquote::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -518,7 +542,7 @@ div.workspace-tab-header-tab,
   opacity: 0.6;
 }
 
-.cm-quote::after, .markdown-preview-view blockquote::after {
+.markdown-preview-view blockquote::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -530,14 +554,13 @@ div.workspace-tab-header-tab,
   opacity: 0.6;
 }
 
-/* Quote hover effect - subtle breathing */
-.cm-quote:hover, .markdown-preview-view blockquote:hover {
+.markdown-preview-view blockquote:hover {
   transform: translateY(-2px);
   transition: transform 0.3s ease;
 }
 
-.cm-quote:hover::before, .markdown-preview-view blockquote:hover::before,
-.cm-quote:hover::after, .markdown-preview-view blockquote:hover::after {
+.markdown-preview-view blockquote:hover::before,
+.markdown-preview-view blockquote:hover::after {
   width: 80px;
   opacity: 0.8;
   transition: all 0.3s ease;
